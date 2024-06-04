@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Parcial</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="titulo">
+            Cargar reseña de pelicula
+        </h1>
+        <form class="frm" id="formulario" action="pelis.php" method="POST">
+            <input type="text" id="pelicula" name="pelicula" placeholder="Ingresar pelicula" maxlength="30">
+            <input type="number" id="puntuacion" name="puntuacion" placeholder="Puntuacion de pelicula" min="1" max="5">
+            <input type="text" id="comentario" name="comentario" placeholder="Ingresar un comentario" minlength="10" maxlength="200">
+            <div id="formAvisos"></div>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
